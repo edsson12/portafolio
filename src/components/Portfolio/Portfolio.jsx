@@ -6,8 +6,7 @@ import "./Portfolio.scss";
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
-} from "../../data.js";
+  } from "../../data.js";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
@@ -25,12 +24,9 @@ const Portfolio = () => {
     },
     {
       id: "web",
-      title: "Diseño UI",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
+      title: "UX",
+    }
+   
  
   ];
  
@@ -52,9 +48,6 @@ const Portfolio = () => {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;      
 
       default:
         setData(featuredPortfolio);
@@ -85,9 +78,12 @@ const Portfolio = () => {
       <div className="port-container">
         {
         data.map((d) => (
-          <div className="items" onClick={handleItems} id={d.id} >            
+          
+          <div className="items" onClick={handleItems} id={d.id} >    
+          <a href={d.ref} target="_blank" rel="noreferrer noopener">       
             <img src={d.img} alt="img" />
             <h3>{d.title}</h3>
+            </a> 
                        
           </div>
         ))}

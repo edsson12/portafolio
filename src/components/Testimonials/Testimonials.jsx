@@ -10,7 +10,7 @@ const Testimonials = () => {
           title: "HTML",
           icon: "assets/files.png",         
           desc: "Html para la creacion de etiquetas de paginas web",
-          img: "assets/foto_nofondo.png"
+          img: "https://i.pinimg.com/564x/32/b3/3c/32b33c0320c798781ae819bd8a65ff9c.jpg"
         },
         {
           id: 2,
@@ -18,7 +18,7 @@ const Testimonials = () => {
           title: "MongoDB, Express, React, Node",
           icon: "assets/react.png",         
           desc: "Utilizo mi gran aliado React.js para hacer todo tipo de aplicaciones web, que gracias a su ecosistema de modulos, herramientas y componentes, me ayuda a cubrir objetivos avanzados.",
-          img: "assets/foto_nofondo.png",
+          img: "assets/node.png",
           featured:true
           
           
@@ -30,7 +30,7 @@ const Testimonials = () => {
           title: "CSS3, Sass",
           icon: "assets/css.png",         
           desc: "Utilizo tecnologias que me ayudan a construir aplicaciones web que se adaptan a todo tipo de dispositivos.",
-          img: "assets/foto_nofondo.png"
+          img: "https://cdn.icon-icons.com/icons2/2845/PNG/512/css_logo_icon_181257.png"
         }
         
       ]
