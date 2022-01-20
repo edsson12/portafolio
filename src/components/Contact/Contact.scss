@@ -1,0 +1,130 @@
+@import "../../Global.scss";
+.o-contact {
+  background-color: white;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .left {
+    flex: 1;
+    
+    @include mobile {
+      flex: none;
+      height: 40%;
+      
+    }
+  }
+  img {
+    height: 100%;
+    overflow: hidden;
+    @include mobile {
+      height: 120%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      flex: none;
+      height: 50%;
+    }
+
+    h2 {
+      font-size: 50px;
+      color: $letras;
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      input {
+        width: 500px;
+        height: 30px;
+        font-size: 14px;
+        @include mobile {
+          width: 290px;
+          height: 35px;
+          border-radius: 3px;
+          border: 0.1px solid black;
+          margin: 12px;
+        }
+      }
+      textarea {
+        width: 500px;
+        height: 400px;
+        font-size: 14px;
+        @include mobile {
+          width: 290px;
+          height: 280px;
+          border-radius: 3px;
+          border: 0.1px solid black;
+        }
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        color: white;
+        background-color: $secundario;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        display: inline-block;
+        font-weight: 500;
+        padding: 15px 32px;
+        outline: none;
+        text-decoration: none;
+        background-color: $mainColor;
+        border-radius: 8px;
+        &:hover{
+          color: $mainColor;
+          background-color: $secundario;
+          font-weight: 500;
+      
+         
+      }
+
+        cursor: pointer;
+        @include mobile {
+          width: 200px;
+          height: 35px;
+          margin-top: 12px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .espan {
+        color: green;
+        animation: blink 0.5s ease-in-out;
+      }
+      .error {
+        color: red;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

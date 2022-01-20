@@ -1,0 +1,25 @@
+.App{
+    height: 100vh;
+
+   
+}
+.o-sections{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightpink;
+    position: relative;
+    top: 70px;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    > *{
+        width: 100%;
+        height: calc(100vh - 70px);
+        scroll-snap-align: start;
+    }
+}

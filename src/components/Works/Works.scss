@@ -1,0 +1,170 @@
+@import "../../Global.scss";
+
+.o-works {
+  background-color: $secundario;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    @include mobile {
+      height: 20px;
+    }
+
+    
+
+    &.aleft {
+      left: 100px;
+      transform: rotate(180deg);
+      @include mobile {
+        
+        left: 15px;
+      }
+    }
+    &.aright {
+      right: 100px;
+      @include mobile {
+        
+        right: 15px;
+      }
+    }
+    &:hover {
+      height: 75px;
+      @include mobile {
+        height: 20px;
+      }
+      
+    }
+  }
+
+  .slider {
+    height: 500px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 2s ease;
+    
+   
+
+    
+    .workContainer {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+      
+
+      .workItem {
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile{
+          width: 75%;
+          height: 90%;
+          flex-direction: column;
+          overflow: hidden;
+          
+          
+          
+            
+           }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          border-radius: 20px 0 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include mobile {
+            flex: 2;
+
+          }
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            @include mobile {
+              width: 90%;
+              padding-left: 5px;
+            }
+            .imgContainer {
+              width: 60px;
+              height: 60px;
+              border-radius: 50px;
+              background-color: rgb(247, 185, 162);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              @include mobile {
+                width: 50px;
+                height: 50px;
+                border-radius: 80px;
+              }
+              img {
+                width: 25px;
+                @include mobile {
+                  width: 50%;
+                }
+              }
+            }
+            h2 {
+              font-size: 30px;
+              @include mobile {
+                font-size: 15px;
+              }
+            }
+            p {
+              font-size: 15px;
+              @include mobile {
+                font-size: 12px;
+                text-align: justify;
+                padding-right: 5px;
+              }
+            }
+            span {
+              font-size: 13px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          border-radius: 0 20px 20px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          @include mobile {
+            flex: 2;
+          }
+          img {
+            width: 100%;
+            transform: rotate(-10deg);
+            @include mobile {
+              transform: rotate(-50deg);
+              width: 120%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
