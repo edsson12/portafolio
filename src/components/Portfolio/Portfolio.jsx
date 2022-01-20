@@ -9,10 +9,10 @@ import {
   mobilePortfolio,
 } from "../../data.js";
 
-const Portfolio = ({enviarInfo,setEnviarInfo}) => {
+const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-  const [abrirModal, setAbrirModal] = useState(false);
+  /*const [abrirModal, setAbrirModal] = useState(false);*/
 
   
 
@@ -36,7 +36,8 @@ const Portfolio = ({enviarInfo,setEnviarInfo}) => {
  
 
   const handleItems = e => {
-    setAbrirModal(true);
+   /* setAbrirModal(true);*/
+   console.log('')
     
     
 

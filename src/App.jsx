@@ -12,14 +12,6 @@ import './App.scss'
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false)
-  const [abrirModal, setAbrirModal] = useState(false);
-  const [data, setData] = useState([]);
-
-  const handleItems = (id) => {
-
-    setAbrirModal(true)
-    
-  };
   
   
   return (
@@ -36,12 +28,7 @@ function App() {
      
       <div className="o-sections">
         <Intro/>
-        <Portfolio handleItems={handleItems}
-        setAbrirModal={setAbrirModal}
-        abrirModal={abrirModal}
-        data={data}
-        setData={setData}
-        />
+        <Portfolio/>
         <Works/>
         <Testimonials/>
         <Contact></Contact>
