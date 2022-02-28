@@ -17,7 +17,7 @@ const Testimonials = () => {
           name: "MERN",
           title: "MongoDB, Express, React, Node",
           icon: "assets/react.png",         
-          desc: "Utilizo mi gran aliado React.js para hacer todo tipo de aplicaciones web, que gracias a su ecosistema de modulos, herramientas y componentes, me ayuda a cubrir objetivos avanzados.",
+          desc: "Utilizo React.js para hacer todo tipo de aplicaciones web, que gracias a su ecosistema de modulos, herramientas y componentes, me ayuda a cubrir objetivos avanzados.",
           img: "assets/node.png",
           featured:true
           
@@ -30,7 +30,7 @@ const Testimonials = () => {
           title: "CSS3, Sass",
           icon: "assets/css.png",         
           desc: "Utilizo tecnologias que me ayudan a construir aplicaciones web que se adaptan a todo tipo de dispositivos.",
-          img: "https://cdn.icon-icons.com/icons2/2845/PNG/512/css_logo_icon_181257.png"
+          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png"
         }
         
       ]
