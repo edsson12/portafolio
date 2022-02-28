@@ -20,7 +20,20 @@ export const featuredPortfolio = [
         img:"assets/comiReact.png",
         ref:"https://github.com/edssonCortes/Comision_interact.git"
     },
-    
+    {
+        id:4,
+        title:"Lyrics App",
+        desc:"",
+        img:"assets/lyrics_app.png",
+        ref:"https://github.com/edsson12/letras"
+    },
+    {
+        id:5,
+        title:"Weather App",
+        desc:"",
+        img:"assets/comiReact.png",
+        ref:"https://github.com/edssonCortes/Comision_interact.git"
+    },    
     
 ];
 
@@ -35,49 +48,6 @@ export const webPortfolio = [
     
 ];
 
-export const mobilePortfolio = [
-    {
-        id:13,
-        title:"mongongo1",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    },
-    {
-        id:14,
-        title:"Proyecto2",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    },
-    {
-        id:15,
-        title:"Proyecto3",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    },
-    {
-        id:16,
-        title:"Proyecto4",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    },
-    {
-        id:17,
-        title:"Proyecto5",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    },
-    {
-        id:18,
-        title:"Proyecto6",
-        desc:"",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Ftags%2Fapp_gallery_screenshots&psig=AOvVaw3joW31MWFbT5jYozpj1VRi&ust=1642264596470000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjoksDWsfUCFQAAAAAdAAAAABAc",
-        ref:"https://www.google.com"
-    }
-];
+
 
 
