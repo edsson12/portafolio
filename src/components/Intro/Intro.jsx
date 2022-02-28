@@ -10,7 +10,7 @@ const Intro = () => {
         init(textRef.current, { 
             showCursor: true, 
             backDelay:1500,
-            strings: ['Front-End','Back-End', 'FullStack' ] })
+            strings: ['Front-End','FullStack' ] })
     }, [])
   return (
     <div className="o-intro" id="intro">
