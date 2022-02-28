@@ -31,8 +31,8 @@ export const featuredPortfolio = [
         id:5,
         title:"Weather App",
         desc:"",
-        img:"assets/comiReact.png",
-        ref:"https://github.com/edssonCortes/Comision_interact.git"
+        img:"assets/weather_app.png",
+        ref:"https://github.com/edsson12/weather-app"
     },    
     
 ];
