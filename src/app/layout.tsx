@@ -5,7 +5,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 const monserrat = Montserrat({
   variable: "--font-montserrat",
-  weight: ["400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-light dark:bg-dark text-black dark:text-white transition-colors duration-300"
+      className=""
     >
       <body className={`${monserrat.variable} antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
