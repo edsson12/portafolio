@@ -5,10 +5,10 @@ const AboutSection = () => {
   return (
     <Section className="mt-20">
       <div className="flex flex-col md:flex-row gap-5">
-        <div className="flex-2 font-bold text-xl">
+        <div className="flex-1 font-bold text-xl">
           <h2>About me</h2>
         </div>
-        <div className="flex-3 font-extralight text-justify">
+        <div className="flex-2 font-extralight text-justify">
           <p>
             Software Developer with over 3 years of experience in creating
             scalable and optimized web applications. Specialized in Next.js,

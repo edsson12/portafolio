@@ -1,25 +1,16 @@
 import React from "react";
 import Section from "../Section/Section";
-import Image from "next/image";
 import Link from "next/link";
+import MainIcon from "../icons/MainIcon";
 interface TopSectionProps {
   className?: string;
 }
 
 const TopSection = ({ className }: TopSectionProps) => {
   return (
-    <Section>
-      <div
-        className={`${className} z-50 flex flex-row bg-white items-center justify-center w-[calc(87px)] h-[calc(140px)] rounded-full py-4 font-monserrat dark:border-2 dark:border-white `}
-      >
-        <Image
-          src="/fondo.svg"
-          alt="Background"
-          width={150}
-          height={150}
-          className="-rotate-45"
-        />
-      </div>
+    <Section className={`${className} z-50 `}>
+      <MainIcon className="w-48 h-auto" />
+
       <h1 className="text-4xl font-black text-center mt-5">Edsson Cortes</h1>
       <small className="text-xl  text-center mt-2 mb-6 ">
         Software developer

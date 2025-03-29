@@ -2,7 +2,7 @@
 
 :root {
   --background-light: #ffffff;
-  --foreground-light: #171717;
+  --foreground-light: #18181b;
   --background-dark: #0a0a0a;
   --foreground-dark: #ededed;
   --font-monserrat: var(--font-montserrat), sans-serif;
@@ -35,8 +35,35 @@ body {
 }
 
 .border-foreground {
-  border-color: var(--foreground-light);
+  border: 1px solid #27272a;
 }
 .border-light {
-  border-color: var(--background-light);
+  border: 1px solid var(--foreground-light);
+}
+
+.card-light {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+}
+.card-dark {
+  background-color: var(--foreground-light);
+  color: var(--foreground-dark);
+}
+
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
 }
