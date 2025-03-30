@@ -2,18 +2,20 @@ import React from "react";
 import Section from "../Section/Section";
 import Link from "next/link";
 import MainIcon from "../icons/MainIcon";
+import { FlipWords } from "../FlipWords/FlipWords";
 interface TopSectionProps {
   className?: string;
 }
 
 const TopSection = ({ className }: TopSectionProps) => {
+  const words = ["Software Engineer", "Front end developer", "Amateur astronaut"];
   return (
     <Section className={`${className} z-50 `}>
       <MainIcon className="w-48 h-auto" />
 
       <h1 className="text-4xl font-black text-center mt-5">Edsson Cortes</h1>
       <small className="text-xl  text-center mt-2 mb-6 ">
-        Software developer
+        <FlipWords words={words} />
       </small>
       <SocialNetworks />
     </Section>

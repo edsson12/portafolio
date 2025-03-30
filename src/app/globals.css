@@ -42,12 +42,17 @@ body {
 }
 
 .card-light {
-  background-color: var(--background-light);
-  color: var(--foreground-light);
+  background-color: var(--background-light); 
 }
 .card-dark {
   background-color: var(--foreground-light);
   color: var(--foreground-dark);
+}
+
+
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
 @theme inline {

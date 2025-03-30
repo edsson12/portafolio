@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
+import { LanguageProvider } from "./context/LanguageContext";
 
 const monserrat = Montserrat({
   variable: "--font-montserrat",
@@ -12,6 +13,7 @@ const monserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Cored",
   description: "Edsson cortes´s portfolio",
+ 
 };
 
 export default function RootLayout({
@@ -20,12 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className=""
-    >
+    <html lang="en" className="">
       <body className={`${monserrat.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -21,6 +21,7 @@ interface CardsProps {
 
 const Cards = ({ cardContent, title }: CardsProps) => {
   const { theme } = useTheme();
+
   const [themeClass, setThemeClass] = React.useState("");
   const darkStyle = "border-foreground card-dark";
   const lightStyle = "border-light";
@@ -33,7 +34,7 @@ const Cards = ({ cardContent, title }: CardsProps) => {
   }, [theme]);
   return (
     <Section className="mt-20">
-      <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex flex-col md:flex-row gap-5 w-full ">
         <div className="flex-1 font-bold text-xl">
           <h2>{title}</h2>
         </div>
